@@ -2,7 +2,7 @@ const blogButton = document.getElementById("blog-button");
 
 if (blogButton) {
   blogButton.addEventListener("click", function () {
-    window.location.replace("../blog.html");
+    window.location.replace("./blog.html");
   });
 }
 
@@ -10,7 +10,7 @@ const homeButton = document.getElementById("home-button");
 
 if (homeButton) {
   homeButton.addEventListener("click", function () {
-    window.location.replace("../index.html");
+    window.location.replace("./index.html");
   });
 }
 
