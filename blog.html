@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- tailwind & daisy ui -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 z-50 w-full">
+      <nav class="bg-[#f9f7f3] h-40">
+        <div class="xl:container w-9/12 mx-auto py-6">
+          <ul
+            class="flex justify-between xl:items-center flex-col gap-5 lg:flex-row"
+          >
+            <div class="flex items-center justify-between">
+              <li>
+                <button
+                  class="btn md:px-8 md:py-6 px-6 py-4 rounded-xl font-semibold md:text-xl text-base bg-lime-300"
+                  id="home-button"
+                >
+                  Home
+                </button>
+              </li>
+              <li class="flex gap-2 items-center lg:hidden">
+                <img src="./assets/coin.png" alt="" />
+                <span class="balance font-medium md:text-xl text-base"
+                  >5500</span
+                >
+                <span class="font-medium md:text-xl text-base">BDT</span>
+              </li>
+            </div>
+            <li class="flex gap-4 items-center self-center">
+              <img src="./assets/logo.png" alt="" />
+              <h1 class="text-xl font-semibold">Donation Hub</h1>
+            </li>
+            <li class="lg:flex gap-2 items-center hidden">
+              <img src="./assets/coin.png" alt="" />
+              <span class="balance font-medium md:text-xl text-base">5500</span>
+              <span class="font-medium md:text-xl text-base">BDT</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="xl:container w-9/12 mx-auto">
+      <section class="xl:mt-60 mt-72 flex justify-center w-full">
+        <div class="join join-vertical bg-base-100 w-10/12">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title font-semibold">
+              How do I create an account?
+            </div>
+            <div class="collapse-content text-sm">
+              Click the "Sign Up" button in the top right corner and follow the
+              registration process.
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title font-semibold">
+              I forgot my password. What should I do?
+            </div>
+            <div class="collapse-content text-sm">
+              Click on "Forgot Password" on the login page and follow the
+              instructions sent to your email.
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title font-semibold">
+              How do I update my profile information?
+            </div>
+            <div class="collapse-content text-sm">
+              Go to "My Account" settings and select "Edit Profile" to make
+              changes.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
